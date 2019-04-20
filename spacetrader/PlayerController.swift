@@ -26,7 +26,6 @@ class PlayerController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     @IBAction func pilotValueChanger(_ sender: UISlider) {
         let curr = Int(sender.value);
         pilotLabel.text = "\(curr)"
