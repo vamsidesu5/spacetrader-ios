@@ -147,6 +147,8 @@ struct Constants {
         "Yojimbo",        // A film by Akira Kurosawa
         "Zalkon",
         "Zuul"];
+    
+    static var MAXSOLARSYSTEM = 15; 
 }
 enum Resources {
     case NOSPECIALRESOURCES,

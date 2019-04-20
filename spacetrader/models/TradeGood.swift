@@ -16,11 +16,6 @@ class TradeGood {
     var  IPL: Int;
     var  variance: Int;
     var  name: String;
-    var  IE: Bool;
-    var  CR: Bool;
-    var  ER: Bool;
-    var  MTL: Int;
-    var  MTH: Int;
     var  currentPrice: Double;
 
     init(name: String, MTLP: Int, MTLU: Int, TTP: Int, basePrice: Double, IPL: Int, variance: Int) {

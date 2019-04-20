@@ -14,7 +14,6 @@ class Universe {
     
     static let universe = Universe();
     // MARK: -
-    
     var locations: [Location];
     var actualLevels: [TechLevel];
     var actualResources: [Resources];
@@ -39,8 +38,28 @@ class Universe {
         
     }
     
-    func generateUniverse() {
+    func generateSystemNames() {
+        let max = Constants.solarSystemNames.count
+        let min = 0;
         
+        var systemSet: Set<String> = []
+        while systemSet.count != Constants.MAXSOLARSYSTEM {
+            let num = Int.random(in: min ..< max)
+            systemSet.insert(Constants.solarSystemNames[num])
+        }
+        systems = Array(systemSet)
     }
     
+    func scatterSystemLocations() {
+        let max = 150;
+        let min = 0;
+        
+        var locationSet: Set<Location> = []
+        while locationSet.count != Constants.MAXSOLARSYSTEM {
+            let x = Int.random(in: min ..< max)
+            let y = Int.random(in: min ..< max)
+            locationSet.insert(Location(x: x,y: y))
+        }
+        locations = Array(locationSet)
+    }
 }
