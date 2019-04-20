@@ -198,6 +198,7 @@
                         <outlet property="engineerSlider" destination="OB0-Rr-RuG" id="7yh-Tc-hy7"/>
                         <outlet property="fighterLabel" destination="77T-Kh-aoS" id="USK-w9-evy"/>
                         <outlet property="fighterSlider" destination="Zv0-MU-fde" id="3jo-oZ-91E"/>
+                        <outlet property="nameText" destination="Buh-pE-jZG" id="sJq-Sh-Aoe"/>
                         <outlet property="pilotLabel" destination="Yor-fx-hOm" id="VNp-2Y-32M"/>
                         <outlet property="pilotSlider" destination="xMV-aI-Fac" id="h3s-2R-Tw5"/>
                         <outlet property="traderLabel" destination="vO1-2c-fJB" id="JNv-Ue-TD2"/>

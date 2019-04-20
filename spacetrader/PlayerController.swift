@@ -12,6 +12,7 @@ class PlayerController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
     @IBOutlet weak var traderLabel: UILabel!
     @IBOutlet weak var fighterLabel: UILabel!
     @IBOutlet weak var diffPicker: UIPickerView!
+    @IBOutlet weak var nameText: UITextField!
     let pickerData = ["Easy","Normal","Hard"]
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1;
@@ -24,7 +25,6 @@ class PlayerController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func pilotValueChanger(_ sender: UISlider) {
