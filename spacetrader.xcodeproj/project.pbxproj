@@ -13,6 +13,14 @@
 		AC8A4E6E226A8593009F75D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8A4E6D226A8593009F75D1 /* Assets.xcassets */; };
 		AC8A4E71226A8593009F75D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8A4E6F226A8593009F75D1 /* LaunchScreen.storyboard */; };
 		AC8A4E79226A9D22009F75D1 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8A4E78226A9D22009F75D1 /* PlayerController.swift */; };
+		E5C51525226BB653003FFCF9 /* TradeGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C5151D226BB653003FFCF9 /* TradeGood.swift */; };
+		E5C51526226BB653003FFCF9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C5151E226BB653003FFCF9 /* Player.swift */; };
+		E5C51527226BB653003FFCF9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C5151F226BB653003FFCF9 /* Location.swift */; };
+		E5C51528226BB653003FFCF9 /* Spaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C51520226BB653003FFCF9 /* Spaceship.swift */; };
+		E5C51529226BB653003FFCF9 /* SolarSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C51521226BB653003FFCF9 /* SolarSystem.swift */; };
+		E5C5152A226BB653003FFCF9 /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C51522226BB653003FFCF9 /* Universe.swift */; };
+		E5C5152B226BB653003FFCF9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C51523226BB653003FFCF9 /* Constants.swift */; };
+		E5C5152C226BB653003FFCF9 /* TechLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C51524226BB653003FFCF9 /* TechLevel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		AC8A4E70226A8593009F75D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC8A4E72226A8593009F75D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC8A4E78226A9D22009F75D1 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		E5C5151D226BB653003FFCF9 /* TradeGood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeGood.swift; sourceTree = "<group>"; };
+		E5C5151E226BB653003FFCF9 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		E5C5151F226BB653003FFCF9 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E5C51520226BB653003FFCF9 /* Spaceship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spaceship.swift; sourceTree = "<group>"; };
+		E5C51521226BB653003FFCF9 /* SolarSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarSystem.swift; sourceTree = "<group>"; };
+		E5C51522226BB653003FFCF9 /* Universe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Universe.swift; sourceTree = "<group>"; };
+		E5C51523226BB653003FFCF9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E5C51524226BB653003FFCF9 /* TechLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechLevel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		AC8A4E65226A8591009F75D1 /* spacetrader */ = {
 			isa = PBXGroup;
 			children = (
+				E5AA468E226BB557009F099C /* models */,
 				AC8A4E66226A8591009F75D1 /* AppDelegate.swift */,
 				AC8A4E68226A8591009F75D1 /* ViewController.swift */,
 				AC8A4E6A226A8591009F75D1 /* Main.storyboard */,
@@ -65,6 +82,21 @@
 				AC8A4E78226A9D22009F75D1 /* PlayerController.swift */,
 			);
 			path = spacetrader;
+			sourceTree = "<group>";
+		};
+		E5AA468E226BB557009F099C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E5C51523226BB653003FFCF9 /* Constants.swift */,
+				E5C5151F226BB653003FFCF9 /* Location.swift */,
+				E5C5151E226BB653003FFCF9 /* Player.swift */,
+				E5C51521226BB653003FFCF9 /* SolarSystem.swift */,
+				E5C51520226BB653003FFCF9 /* Spaceship.swift */,
+				E5C51524226BB653003FFCF9 /* TechLevel.swift */,
+				E5C5151D226BB653003FFCF9 /* TradeGood.swift */,
+				E5C51522226BB653003FFCF9 /* Universe.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +170,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5C5152C226BB653003FFCF9 /* TechLevel.swift in Sources */,
+				E5C5152A226BB653003FFCF9 /* Universe.swift in Sources */,
 				AC8A4E69226A8591009F75D1 /* ViewController.swift in Sources */,
 				AC8A4E79226A9D22009F75D1 /* PlayerController.swift in Sources */,
+				E5C51529226BB653003FFCF9 /* SolarSystem.swift in Sources */,
 				AC8A4E67226A8591009F75D1 /* AppDelegate.swift in Sources */,
+				E5C5152B226BB653003FFCF9 /* Constants.swift in Sources */,
+				E5C51528226BB653003FFCF9 /* Spaceship.swift in Sources */,
+				E5C51526226BB653003FFCF9 /* Player.swift in Sources */,
+				E5C51527226BB653003FFCF9 /* Location.swift in Sources */,
+				E5C51525226BB653003FFCF9 /* TradeGood.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
