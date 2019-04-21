@@ -149,7 +149,7 @@ struct Constants {
         "Zalkon",
         "Zuul"];
     
-    
+    static var MAXSOLARSYSTEM = 15; 
 }
 
 enum Resources: CaseIterable {
