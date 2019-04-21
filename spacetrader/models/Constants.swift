@@ -17,6 +17,7 @@ struct Constants {
     static var Industrial = TechLevel(level: 5, name: "Industrial");
     static var PostIndustrial = TechLevel(level: 6, name: "Post-Industrial");
     static var HighTech = TechLevel(level: 7, name: "High-Tech");
+    static var arrTechLevel = [PreAgriculture, Agriculture, Medieval, Renaissance,EarlyIndustrial,Industrial,PostIndustrial, HighTech]
     static var Water = TradeGood(name: "Water", MTLP: 0, MTLU: 0, TTP: 2, basePrice: 30, IPL: 3, variance: 4);
     static var Furs = TradeGood(name: "Furs", MTLP: 0, MTLU: 0, TTP: 0, basePrice: 250, IPL: 10, variance: 10);
     static var Food = TradeGood(name: "Food", MTLP: 1, MTLU: 0, TTP: 1, basePrice: 100, IPL: 5, variance: 5);
@@ -147,8 +148,11 @@ struct Constants {
         "Yojimbo",        // A film by Akira Kurosawa
         "Zalkon",
         "Zuul"];
+    
+    
 }
-enum Resources {
+
+enum Resources: CaseIterable {
     case NOSPECIALRESOURCES,
     MINERALRICH,
     MINERALPOOR,

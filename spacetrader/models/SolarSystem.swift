@@ -18,13 +18,11 @@ class SolarSystem {
     var location: Location;
     var techLevel: TechLevel;
     var resources: Resources;
-    var tradeGoods: [TradeGood];
     
-    init(name: String, location: Location, techLevel: TechLevel, resources: Resources, listOfGoods: [TradeGood]) {
+    init(name: String, location: Location, techLevel: TechLevel, resources: Resources) {
         self.systemName = name;
         self.location = location;
         self.techLevel = techLevel;
         self.resources = resources;
-        self.tradeGoods = listOfGoods;
     }
 }

@@ -16,4 +16,8 @@ class Location {
         self.x = x;
         self.y = y;
     }
+    
+    func description() -> String {
+        return "Location: \(x) + \(y)"
+    }
 }
