@@ -45,7 +45,7 @@ class Universe {
         generatePoliticalSystems()
         //solarSystems = new SolarSystem[MAXSOLARSYSTEM];
         //var content = "";
-        for i in 0...systems.count {
+        for i in 0...systems.count-1 {
             let sys = systems[i];
             let locat =  locations[i];
             let x = locat.x;
@@ -56,13 +56,13 @@ class Universe {
     
     func generateTechLevels() {
         for _ in 0...MAXSOLARSYSTEM-1 {
-            actualLevels.append(Constants.arrTechLevel[Int.random(in: 0 ... Constants.arrTechLevel.count)])
+            actualLevels.append(Constants.arrTechLevel[Int.random(in: 0 ... Constants.arrTechLevel.count-1)])
         }
     }
     
     func generatePoliticalSystems() {
         for _ in 0...MAXSOLARSYSTEM-1 {
-            actualResources.append(Resources.allCases[Int.random(in: 0 ... Constants.arrTechLevel.count)])
+            actualResources.append(Resources.allCases[Int.random(in: 0 ... Constants.arrTechLevel.count-1)])
         }
     }
     func generateSystemNames() {

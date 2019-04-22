@@ -13,6 +13,7 @@ class PlayerController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
     @IBOutlet weak var fighterLabel: UILabel!
     @IBOutlet weak var diffPicker: UIPickerView!
     @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var startnewGameBtn: UIButton!
     let pickerData = ["Easy","Normal","Hard"]
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1;
@@ -57,22 +58,15 @@ class PlayerController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
             p.updatePlayer(playername: name, pilot: pilot, fighter: fighter, trader: trader, engineer: engineer, diff: diff)
             var u : Universe = Universe.universe;
             u.generateUniverse();
-            
-            //p = Player(playername: name,pilot: pilot,fighter: fighter,trader: trader,engineer: engineer, diff: diff)
-            //viewModel.update or whatever
-            let alert = UIAlertController(title: nil, message: "Player Created (\name)", preferredStyle: .alert)
+            let alert = UIAlertController(title: nil, message: "Player Created \(name)", preferredStyle: .alert)
             alert.view.backgroundColor = UIColor.black
             alert.view.alpha = 0.6
             alert.view.layer.cornerRadius = 15
-            self.present(alert, animated: true)
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4) {
-                alert.dismiss(animated: true)
+            let action = UIAlertAction(title: "OK", style: .default) { (action) -> Void in
+                self.performSegue(withIdentifier: "move", sender: self)
             }
-            //Universe universe = Universe.getInstance();
-            //universe.generateUniverse();
-            //viewModel.generatePlayerSolarSystem(universe.getPlanets().get((int)(Math.random() * 15)));
-            //m.saveUniverse();
-            //m.savePlayer();
+            alert.addAction(action)
+            self.present(alert, animated: true)
         }
         else {
             let alert = UIAlertController(title: nil, message: "Player Not Created - Points Don't Add up to 16", preferredStyle: .alert)
@@ -80,11 +74,10 @@ class PlayerController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
             alert.view.alpha = 0.6
             alert.view.layer.cornerRadius = 15
             self.present(alert, animated: true)
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4) {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                 alert.dismiss(animated: true)
             }
         }
-        //self.presentViewController(PlayGameController, animated: true)
     }
     
 }
