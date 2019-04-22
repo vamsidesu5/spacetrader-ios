@@ -53,7 +53,11 @@ class PlayerController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
         let fighter = Int(fighterSlider.value);
         let sum = pilot + engineer + trader + fighter
         if(sum == 16){
-            var p : Player!
+            var p : Player = Player.player; 
+            p.updatePlayer(playername: name, pilot: pilot, fighter: fighter, trader: trader, engineer: engineer, diff: diff)
+            var u : Universe = Universe.universe;
+            u.generateUniverse();
+            
             //p = Player(playername: name,pilot: pilot,fighter: fighter,trader: trader,engineer: engineer, diff: diff)
             //viewModel.update or whatever
             let alert = UIAlertController(title: nil, message: "Player Created (\name)", preferredStyle: .alert)

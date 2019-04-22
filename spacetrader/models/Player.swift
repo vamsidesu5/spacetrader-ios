@@ -10,7 +10,7 @@ import Foundation
 
 class Player {
     
-   static let player = Player()
+    static let player = Player(playername: "Example", pilot: 4, fighter: 4, trader: 4, engineer: 4, diff: "Hard");
     
 
    var pilotSkill: Int;
@@ -23,17 +23,24 @@ class Player {
    var name: String
 
    private init(playername: String, pilot : Int, fighter : Int, trader: Int, engineer : Int, diff : String){
-        name = playername;
-        pilotSkill = pilot;
-        fighterSkill = fighter;
-        traderSkill = trader;
-        engineerSkill = engineer;
-        difficulty = diff;
-        credits = 1000;
-        //ship =
+        self.name = playername;
+        self.pilotSkill = pilot;
+        self.fighterSkill = fighter;
+        self.traderSkill = trader;
+        self.engineerSkill = engineer;
+        self.difficulty = diff;
+        self.credits = 1000;
+        self.ship = Constants.Gnat;
     }
     
-    private init(){
-        
-    }*/
+
+    
+    public func updatePlayer(playername: String, pilot : Int, fighter : Int, trader: Int, engineer : Int, diff : String) {
+        self.pilotSkill = pilot;
+        self.fighterSkill = fighter;
+        self.traderSkill = trader;
+        self.engineerSkill = engineer;
+        self.difficulty = diff;
+        self.name = playername;
+    }
 }

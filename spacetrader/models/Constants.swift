@@ -30,14 +30,14 @@ struct Constants {
     static var Robots = TradeGood(name: "Robots", MTLP: 6, MTLU: 4, TTP: 7, basePrice: 5000, IPL: -150, variance: 100);
     static var Flea = Spaceship(name: "Flea", parsecs: 20, cargoMax: 10, hullStrength: 2);
     static var Gnat = Spaceship(name: "Gnat", parsecs: 15, cargoMax: 15, hullStrength: 7);
-    static var Firefly = Spaceship(name: "Firefly", parsecs: 17, cargoMax: 20, hullStrength: 7),
-    static var Mosquito = Spaceship(name: "Mosquito", parsecs: 13, cargoMax: 15, hullStrength: 25),
-    static var Bumblebee = Spaceship(name: "Bumblebee", parsecs: 15, cargoMax: 25, hullStrength: 10),
-    static var Beetle = Spaceship(name: "Beetle", parsecs: 14, cargoMax: 50, hullStrength: 5),
-    static var Hornet = Spaceship(("Hornet", 16, 20, 16),
-    static var Grasshopper = Spaceship("Grasshopper", 15, 30, 12),
-    static var Termite = Spaceship("Termite", 13, 60, 20),
-    static var Wasp = Spaceship("Wasp", 14, 35, 20);
+    static var Firefly = Spaceship(name: "Firefly", parsecs: 17, cargoMax: 20, hullStrength: 7);
+    static var Mosquito = Spaceship(name: "Mosquito", parsecs: 13, cargoMax: 15, hullStrength: 25);
+    static var Bumblebee = Spaceship(name: "Bumblebee", parsecs: 15, cargoMax: 25, hullStrength: 10);
+    static var Beetle = Spaceship(name: "Beetle", parsecs: 14, cargoMax: 50, hullStrength: 5);
+    static var Hornet = Spaceship(name: "Hornet", parsecs: 16, cargoMax: 20, hullStrength: 16)
+    static var Grasshopper = Spaceship(name: "Grasshopper", parsecs: 15, cargoMax: 30, hullStrength: 12);
+    static var Termite = Spaceship(name: "Termite", parsecs: 13, cargoMax: 60, hullStrength: 20);
+    static var Wasp = Spaceship(name: "Wasp", parsecs: 14, cargoMax: 35, hullStrength: 20);
     
     static var solarSystemNames: [String] = ["Acamar",
                                               "Adahn",        // The alternate personality for The Nameless One in "Planescape: Torment"
