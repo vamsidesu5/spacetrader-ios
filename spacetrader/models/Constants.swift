@@ -28,6 +28,17 @@ struct Constants {
     static var Machines = TradeGood(name: "Machines", MTLP: 4, MTLU: 3, TTP: 5, basePrice: 900, IPL: -30, variance: 5);
     static var Narcotics = TradeGood(name: "Narcotics", MTLP: 5, MTLU: 0, TTP: 5, basePrice: 3500, IPL: -125, variance: 10);
     static var Robots = TradeGood(name: "Robots", MTLP: 6, MTLU: 4, TTP: 7, basePrice: 5000, IPL: -150, variance: 100);
+    static var Flea = Spaceship(name: "Flea", parsecs: 20, cargoMax: 10, hullStrength: 2);
+    static var Gnat = Spaceship(name: "Gnat", parsecs: 15, cargoMax: 15, hullStrength: 7);
+    static var Firefly = Spaceship(name: "Firefly", parsecs: 17, cargoMax: 20, hullStrength: 7),
+    static var Mosquito = Spaceship(name: "Mosquito", parsecs: 13, cargoMax: 15, hullStrength: 25),
+    static var Bumblebee = Spaceship(name: "Bumblebee", parsecs: 15, cargoMax: 25, hullStrength: 10),
+    static var Beetle = Spaceship(name: "Beetle", parsecs: 14, cargoMax: 50, hullStrength: 5),
+    static var Hornet = Spaceship(("Hornet", 16, 20, 16),
+    static var Grasshopper = Spaceship("Grasshopper", 15, 30, 12),
+    static var Termite = Spaceship("Termite", 13, 60, 20),
+    static var Wasp = Spaceship("Wasp", 14, 35, 20);
+    
     static var solarSystemNames: [String] = ["Acamar",
                                               "Adahn",        // The alternate personality for The Nameless One in "Planescape: Torment"
         "Aldea",
