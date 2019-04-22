@@ -21,10 +21,10 @@ class Universe {
     var systems: [String];
     var MAXSOLARSYSTEM : Int = 15;
     
+    
 //    private List<Location> locations;
 //    private List<TechLevel> actualLevels;
 //    private List<Resources> actualResources;
-    
 //    private List<SolarSystem> solarSystems;
     
     
@@ -90,4 +90,3 @@ class Universe {
         locations = Array(locationSet)
     }
 }
-
