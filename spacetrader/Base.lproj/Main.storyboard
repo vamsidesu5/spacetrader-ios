@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,24 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SpaceTrader" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0A-d6-cyQ">
-                                <rect key="frame" x="80" y="104" width="255" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SpaceTrader" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0A-d6-cyQ">
+                                <rect key="frame" x="80" y="120.5" width="255" height="53.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="41"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAH-A5-Y4R">
-                                <rect key="frame" x="63" y="721" width="78" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="R2K-L7-Dzy"/>
-                                    <constraint firstAttribute="width" secondItem="nAH-A5-Y4R" secondAttribute="height" multiplier="13:5" id="dWc-9L-gJG"/>
-                                    <constraint firstAttribute="width" constant="78" id="ohk-iC-O8b"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Load Game"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zia-fq-HOF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zia-fq-HOF">
                                 <rect key="frame" x="275" y="721" width="75" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="WUf-oo-dfB"/>
@@ -46,8 +35,32 @@
                                     <segue destination="buc-99-2SS" kind="show" id="6zO-1X-s1q"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAH-A5-Y4R">
+                                <rect key="frame" x="61" y="721" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="R2K-L7-Dzy"/>
+                                    <constraint firstAttribute="width" secondItem="nAH-A5-Y4R" secondAttribute="height" multiplier="13:5" id="dWc-9L-gJG"/>
+                                    <constraint firstAttribute="width" constant="78" id="ohk-iC-O8b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Load Game"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zia-fq-HOF" secondAttribute="bottom" constant="111" id="5Lg-Qk-pjn"/>
+                            <constraint firstItem="nAH-A5-Y4R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="AQo-xH-7MM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zia-fq-HOF" secondAttribute="trailing" constant="64" id="Cim-5r-wHG"/>
+                            <constraint firstItem="zia-fq-HOF" firstAttribute="top" secondItem="q0A-d6-cyQ" secondAttribute="bottom" constant="547" id="HO9-0S-jql"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q0A-d6-cyQ" secondAttribute="trailing" constant="79" id="LXa-wW-KLN"/>
+                            <constraint firstItem="nAH-A5-Y4R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="677" id="VMU-AE-KUb"/>
+                            <constraint firstItem="nAH-A5-Y4R" firstAttribute="top" secondItem="q0A-d6-cyQ" secondAttribute="bottom" constant="547" id="b4F-CT-ryf"/>
+                            <constraint firstItem="q0A-d6-cyQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76.5" id="dbL-7r-3JV"/>
+                            <constraint firstItem="zia-fq-HOF" firstAttribute="leading" secondItem="nAH-A5-Y4R" secondAttribute="trailing" constant="136" id="iax-9Z-Nv5"/>
+                            <constraint firstItem="q0A-d6-cyQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="k01-wf-hGw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nAH-A5-Y4R" secondAttribute="bottom" constant="111" id="kT2-47-2Cl"/>
+                            <constraint firstItem="zia-fq-HOF" firstAttribute="leading" secondItem="nAH-A5-Y4R" secondAttribute="trailing" constant="136" id="lK9-si-0w0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -191,7 +204,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start New Game"/>
                                 <connections>
-                                    <segue destination="MFC-qf-Rdn" kind="show" id="aFs-PQ-E6a"/>
+                                    <action selector="onStartClick:" destination="buc-99-2SS" eventType="touchDown" id="y56-2M-dgD"/>
+                                    <segue destination="MFC-qf-Rdn" kind="show" id="tmU-m6-3PK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -216,11 +230,11 @@
             </objects>
             <point key="canvasLocation" x="1069.5652173913045" y="25.446428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Game Controller-->
         <scene sceneID="UGv-jK-KnY">
             <objects>
-                <viewController id="MFC-qf-Rdn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gXB-vj-6sf">
+                <viewController id="MFC-qf-Rdn" customClass="PlayGameController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gXB-vj-6sf" customClass="PlayGameController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

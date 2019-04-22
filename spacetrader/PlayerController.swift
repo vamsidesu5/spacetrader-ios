@@ -43,4 +43,44 @@ class PlayerController: UIViewController,UIPickerViewDataSource,UIPickerViewDele
         let curr = Int(sender.value);
         fighterLabel.text = "\(curr)"
     }
+    
+    @IBAction func onStartClick(_ sender: Any) {
+        let name : String = String(nameText.text!)
+        let diff = pickerData[diffPicker.selectedRow(inComponent: 0)]
+        let pilot = Int(pilotSlider.value);
+        let engineer = Int(engineerSlider.value);
+        let trader = Int(traderSlider.value);
+        let fighter = Int(fighterSlider.value);
+        let sum = pilot + engineer + trader + fighter
+        if(sum == 16){
+            var p : Player!
+            //p = Player(playername: name,pilot: pilot,fighter: fighter,trader: trader,engineer: engineer, diff: diff)
+            //viewModel.update or whatever
+            let alert = UIAlertController(title: nil, message: "Player Created (\name)", preferredStyle: .alert)
+            alert.view.backgroundColor = UIColor.black
+            alert.view.alpha = 0.6
+            alert.view.layer.cornerRadius = 15
+            self.present(alert, animated: true)
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4) {
+                alert.dismiss(animated: true)
+            }
+            //Universe universe = Universe.getInstance();
+            //universe.generateUniverse();
+            //viewModel.generatePlayerSolarSystem(universe.getPlanets().get((int)(Math.random() * 15)));
+            //m.saveUniverse();
+            //m.savePlayer();
+        }
+        else {
+            let alert = UIAlertController(title: nil, message: "Player Not Created - Points Don't Add up to 16", preferredStyle: .alert)
+            alert.view.backgroundColor = UIColor.black
+            alert.view.alpha = 0.6
+            alert.view.layer.cornerRadius = 15
+            self.present(alert, animated: true)
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4) {
+                alert.dismiss(animated: true)
+            }
+        }
+        //self.presentViewController(PlayGameController, animated: true)
+    }
+    
 }

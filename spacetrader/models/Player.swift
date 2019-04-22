@@ -8,17 +8,32 @@
 
 import Foundation
 
-//class Player {
-//    var pilotSkill: Int;
-//    var fighterSkill: Int;
-//    var traderSkill: Int;
-//    var engineerSkill: Int;
-//    var difficulty: Int;
-//    var credits: Int;
-//    var ship: Spaceship;
-//    var name: String
-//
-//    init() {
-//
-//    }
-//}
+class Player {
+    
+   static let player = Player()
+    
+
+   var pilotSkill: Int;
+   var fighterSkill: Int;
+   var traderSkill: Int;
+   var engineerSkill: Int;
+   var difficulty: String;
+   var credits: Int;
+   var ship: Spaceship;
+   var name: String
+
+   private init(playername: String, pilot : Int, fighter : Int, trader: Int, engineer : Int, diff : String){
+        name = playername;
+        pilotSkill = pilot;
+        fighterSkill = fighter;
+        traderSkill = trader;
+        engineerSkill = engineer;
+        difficulty = diff;
+        credits = 1000;
+        //ship =
+    }
+    
+    private init(){
+        
+    }*/
+}
